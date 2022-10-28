@@ -40,7 +40,7 @@ button {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1290px;
   margin: 0 auto;
   padding: 0 15px;
   -webkit-box-sizing: content-box;
@@ -598,4 +598,177 @@ button {
 }
 .links-block .cards-block .card .card-links-block .card-links .link:hover {
   color: #8DB338;
+}
+
+/* Bestsellers */
+.bestsellers-block {
+  padding: 80px 0 70px 0;
+}
+.bestsellers-block .title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bestsellers-block .title-block .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 49px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #8DB338;
+}
+
+.gallery {
+  position: relative;
+}
+.gallery .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+  margin-bottom: 40px;
+}
+.gallery .carousel .item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.gallery .carousel .item .item-image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.gallery .carousel .item .item-image .item__cover {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.gallery .carousel .item .item-image .item__cover .item_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.gallery .carousel .item:hover .item__cover {
+  opacity: 1;
+}
+.gallery .carousel .item .text-block {
+  border: 2px solid #f5f5f6;
+  border-top: none;
+  padding: 30px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.gallery .carousel .item .text-block .item__title {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+.gallery .carousel .item .text-block .item__text-block {
+  margin: 0 0 20px 0;
+}
+.gallery .carousel .item .text-block .item__text-block > *:not(:last-child) {
+  margin: 0 0 8px 0;
+}
+.gallery .carousel .item .text-block .item__text-block .item__text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #909090;
+}
+.gallery .carousel .item .text-block .price {
+  color: #8DB338;
+  font-weight: 700;
+  font-size: 20px;
+}
+.gallery .current-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery .current-image > *:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+.gallery .current-image .mark {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #f5f5f6;
+}
+.gallery .current-image .active {
+  background: #8DB338;
+}
+.gallery .gallery-buttons {
+  position: absolute;
+  top: 204.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.gallery .gallery-buttons > *:first-child {
+  left: -70px;
+}
+.gallery .gallery-buttons > *:last-child {
+  right: -70px;
+}
+.gallery .gallery-buttons .gallery-button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery .gallery-buttons .gallery-button .icon_left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
