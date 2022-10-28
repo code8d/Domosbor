@@ -221,6 +221,7 @@
 .building-types {
     .types {
         padding: 80px 0 70px 0;
+        box-sizing: border-box;
     }
     .cards-block {
         display: flex;
@@ -271,7 +272,8 @@
 .technologies {
 }
 .technologies-block {
-    padding: 80px 0 70px 0;;
+    padding: 80px 0 70px 0;
+    box-sizing: border-box;
     .title {
     }
     .cards-block {
@@ -312,6 +314,7 @@
 }
 .links-block {
     padding: 80px 0 70px 0;
+    box-sizing: border-box;
     .title {
     }
     .cards-block {
@@ -369,6 +372,7 @@
 }
 .bestsellers-block {
     padding: 80px 0 70px 0;
+    box-sizing: border-box;
     .title-block {
         display: flex;
         justify-content: space-between;
@@ -498,6 +502,95 @@
             }
             .icon {
             }
+        }
+    }
+}
+
+/* benefits */
+
+.benefits {
+    position: relative;
+    height: 796px;
+    .background {
+        position: absolute;
+        top: 86px;
+        z-index: -1;
+        display: flex;
+        width: 100%;
+        height: 796px;
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.benefits-block {
+    position: relative;
+    padding: 106px 0 70px 0;
+    box-sizing: border-box;
+    .title {
+    }
+    .cards-block {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            display: flex;
+            align-items: center;
+            margin: 0 36px 40px 0;
+            & > *:not(:last-child) {
+                margin: 0 24px 0 0;
+            }
+            .number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                height: 80px;
+                font-weight: 700;
+                font-size: 64px;
+                padding: 1px 27px;
+                box-sizing: border-box;
+                color: #fff;
+                background: #8DB338;
+            }
+            .card_text-block {
+                .card__title {
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #49423d;
+                    margin: 0 0 4px 0;
+                }
+                .card__text {
+                    width: 300px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #49423d;
+                }
+            }
+        }
+    }
+}
+.log-block {
+    position: absolute;
+    top: 207px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    .image-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo {
+            position: absolute;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 40px;
+            color: #49423d;
+        }
+        .image {
         }
     }
 }
