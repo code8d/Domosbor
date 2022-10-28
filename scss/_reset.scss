@@ -9,3 +9,16 @@ body, h1, h2, h3, h4, h5, h6, ul, li, a, p {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+}

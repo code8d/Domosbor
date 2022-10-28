@@ -1,0 +1,86 @@
+.header {
+}
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    .block1 {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin: 0 35px 0 0;
+        }
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            & > *:not(:last-child) {
+                margin: 0 0 5px 0;
+            }
+            .line {
+                width: 18px;
+                height: 2px;
+                background: #8db338;
+            }
+        }
+        .search {
+            display: flex;
+            .icon {
+            }
+        }
+        .language-block {
+            display: flex;
+            .language {
+                font-weight: 500;
+                width: 27px;
+                height: 27px;
+                text-transform: uppercase;
+            }
+            & > *:first-child {
+                font-weight: 700;
+                color: #fff;
+                background: #8db338;
+                margin: 0 4px 0 0;
+            }
+        }
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        .image {
+        }
+    }
+    .block2 {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin: 0 40px 0 0;
+        }
+        .buttons-block {
+            display: flex;
+            & > *:not(:last-child) {
+                margin: 0 35px 0 0;
+            }
+            .btn {
+                display: flex;
+                .icon {
+                }
+            }
+        }
+        .contact-block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .telephone {
+                font-weight: 700;
+                font-size: 20px;
+                margin: 0 0 4px 0;
+            }
+            .text {
+                display: flex;
+                font-weight: 500;
+                font-size: 12px;
+                color: #8db338;
+            }
+        }
+    }
+}
