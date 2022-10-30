@@ -1249,3 +1249,99 @@ input {
   font-size: 20px;
   color: #494949;
 }
+
+/* Blog */
+.blog-block {
+  padding: 80px 0 70px 0;
+}
+.blog-block .title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 60px 0;
+}
+.blog-block .title-block .title {
+  margin: 0;
+}
+.blog-block .title-block .all_blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 49px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #8db338;
+}
+.blog-block .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.blog-block .block .item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.blog-block .block .item .item__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 234px;
+  height: 234px;
+}
+.blog-block .block .item .item__image .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-block .block .item .item__text-block {
+  height: 100%;
+  padding: 30px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #f5f5f6;
+  border-top: none;
+}
+.blog-block .block .item .item__text-block .title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 48px;
+  margin: 0 0 8px 0;
+}
+.blog-block .block .item .item__text-block .item__title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #49423d;
+}
+.blog-block .block .item .item__text-block .item__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #909090;
+}
