@@ -1,3 +1,5 @@
+/* Product */
+
 .product {
 }
 .product-block {
@@ -183,6 +185,107 @@
                     font-size: 16px;
                     color: #fff;
                     background: #8DB338;
+                }
+            }
+        }
+    }
+}
+
+/* Additional-info */
+
+.description {
+}
+.description-block {
+    padding: 80px 0 70px 0;
+    .title {
+    }
+    .block {
+        .description__text-block {
+            display: flex;
+            margin: 0 -35px;
+            margin-bottom: 80px;
+            .text {
+                flex: 0 0 50%;
+                padding: 0 35px;
+                box-sizing: border-box;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+            }
+            .text_bold {
+                font-weight: 600;
+            }
+        }
+        .info-block {
+            margin: 0 0 80px 0;
+            .subtitle {
+                font-weight: 700;
+                font-size: 24px;
+                color: #49423D;
+                line-height: 33px;
+                margin: 0 0 40px 0;
+            }
+            .content-block {
+                display: flex;
+                margin: 0 -35px;
+                .inner-content {
+                    flex: 0 0 50%;
+                    padding: 0 35px;
+                    box-sizing: border-box;
+                    & > *:not(:last-child) {
+                        margin: 0 0 20px 0;
+                    }
+                    .text-block {
+                        display: flex;
+                        .inner-text {
+                            flex: 0 0 50%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .additional-info {
+            .subtitle {
+                font-weight: 700;
+                font-size: 24px;
+                color: #49423D;
+                line-height: 33px;
+                margin: 0 0 40px 0;
+            }
+            .additional-content {
+                display: flex;
+                .row-block {
+                    flex: 0 0 25%;
+                    display: flex;
+                    flex-direction: column;
+                    & > *:not(:last-child) {
+                        margin: 0 0 20px 0;
+                    }
+                    .item {
+                        .item__top-block {
+                            display: flex;
+                            align-items: center;
+                            .item__image {
+                                display: flex;
+                                margin: 0 16px 0 0;
+                                .icon {
+                                }
+                            }
+                            .item__name {
+                                color: #49423D;
+                                font-size: 18px;
+                                line-height: 26px;
+                            }
+                        }
+                        .item__text {
+                            display: block;
+                            margin-left: 40px;
+                            line-height: 26px;
+                            font-weight: 400;
+                            color: #909090;
+                        }
+                    }
                 }
             }
         }
