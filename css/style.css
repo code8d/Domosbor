@@ -2944,6 +2944,10 @@ input {
 .blog .blog-block .block .items-block .item .item__image .image {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 .blog .blog-block .block .items-block .item .item__text-block .date {
   margin-bottom: 16px;
