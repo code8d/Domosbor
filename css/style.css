@@ -2592,9 +2592,7 @@ input {
   line-height: 24px;
 }
 
-.list .list-block {
-  padding: 0 0 70px 0;
-}
+/* Gallery */
 .list .list-block .block {
   margin: 0;
 }
@@ -2686,4 +2684,20 @@ input {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.list .list-block_npadding {
+  padding: 0 0 70px 0;
+}
+
+/* Gallery Exteriors */
+.list .list-block .block {
+  margin: 0 -15px;
+}
+.list .list-block .buttons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

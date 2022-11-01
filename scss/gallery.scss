@@ -1,6 +1,7 @@
+/* Gallery */
+
 .list {
     .list-block {
-        padding: 0 0 70px 0;
         .map-block {
             .map__link {
             }
@@ -72,6 +73,59 @@
                                 height: 100%;
                                 object-fit: cover;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .list-block_npadding {
+        padding: 0 0 70px 0;
+    }
+}
+
+/* Gallery Exteriors */
+
+.list {
+    .list-block {
+        .map-block {
+            .map__link {
+            }
+        }
+        .title-block {
+            .item__name {
+            }
+            .title {
+            }
+        }
+        .block {
+            margin: 0 -15px;
+            .item__wrapper {
+                .item {
+                    .image {
+                    }
+                }
+            }
+        }
+        .buttons-block {
+            display: flex;
+            justify-content: center;
+            .pagination {
+                .numbers {
+                    .number {
+                    }
+                    .active {
+                    }
+                    .space {
+                    }
+                }
+                .carousel-buttons {
+                    .button {
+                        .icon {
+                        }
+                        .prev {
+                        }
+                        .next {
                         }
                     }
                 }
