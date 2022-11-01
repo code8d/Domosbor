@@ -1,5 +1,5 @@
 .blog {
-    .blog-block {
+    .blog-box {
         padding: 40px 0 70px 0;
         .map-block {
             display: flex;
@@ -81,6 +81,9 @@
                         }
                     }
                     .item__text-block {
+                        padding: 30px;
+                        border: 1px solid #f5f5f6;
+                        box-sizing: border-box;
                         .date {
                             margin-bottom: 16px;
                             font-weight: 400;

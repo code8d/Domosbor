@@ -607,6 +607,12 @@
 .form {
     background: linear-gradient(102deg, #8DB338, #739A1D)
 }
+.form-wrapper {
+    margin: 80px 0 0 0;
+}
+.form_nmargin {
+    margin: 0;
+}
 .form-block {
     display: flex;
     padding: 80px 110px 80px;
