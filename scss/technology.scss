@@ -1,0 +1,170 @@
+/* Technology */
+
+.technology {
+    .list-block {
+        .map-block {
+            .map__link {
+            }
+        }
+        .title-block {
+            .item__name {
+            }
+            .title {
+            }
+        }
+        .block {
+            .list__top-block {
+                .image-block {
+                    display: flex;
+                    width: 630px;
+                    height: 400px;
+                    .image {
+                    }
+                }
+                .top-block__text {
+                    width: 590px;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+                .text__bold {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .list-block_npadding {
+    }
+}
+.list {
+}
+
+/* Projects */
+
+.projects {
+    .bestsellers-block {
+        .title-block {
+            .title {
+            }
+        }
+        .gallery {
+            .carousel {
+                .item {
+                    .item-image {
+                        .item__cover {
+                            .item_button {
+                                .icon {
+                                }
+                            }
+                            .image {
+                            }
+                        }
+                    }
+                    .text-block {
+                        .item__title {
+                        }
+                        .item__text-block {
+                            .item__text {
+                            }
+                        }
+                        .price {
+                        }
+                        .count {
+                        }
+                    }
+                }
+            }
+            .current-image {
+                .gallery-button {
+                    width: 300px;
+                    height: 40px;
+                    background: #8DB338;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* Pros-n-cons */
+
+.pros-n-cons {
+    .pros-n-cons-block {
+        padding: 80px 0 50px 0;
+        .title {
+        }
+        .block {
+            display: flex;
+            .pros-wrapper {
+                flex: 0 0 50%;
+                .pros__title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    margin: 0 0 40px 0;
+                }
+                .pros-block {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item {
+                        flex: 0 0 50%;
+                        display: flex;
+                        margin: 0 0 20px 0;
+                        .icon-block {
+                            display: flex;
+                            width: 24px;
+                            height: 24px;
+                            margin: 0 16px 0 0;
+                            .icon {
+                            }
+                        }
+                        .item__text {
+                            display: flex;
+                            width: 220px;
+                            min-height: 24px;
+                            font-size: 20px;
+                            line-height: 28px;
+                            margin-top: -2px;
+                        }
+                    }
+                }
+            }
+            .cons-wrapper {
+                flex: 0 0 50%;
+                .cons__title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    margin: 0 0 40px 0;
+                }
+                .cons-block {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item {
+                        flex: 0 0 50%;
+                        display: flex;
+                        margin: 0 0 20px 0;
+                        .icon-block {
+                            display: flex;
+                            width: 24px;
+                            height: 24px;
+                            margin: 0 16px 0 0;
+                            .icon {
+                            }
+                        }
+                        .item__text {
+                            display: flex;
+                            width: 220px;
+                            min-height: 24px;
+                            font-size: 20px;
+                            line-height: 28px;
+                            margin-top: -2px;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    
+}

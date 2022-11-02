@@ -3169,3 +3169,126 @@ input {
 .build_list .list-block .buttons-block {
   margin: 0;
 }
+/* Technology */
+.technology .list-block .block .list__top-block .image-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 630px;
+  height: 400px;
+}
+.technology .list-block .block .list__top-block .top-block__text {
+  width: 590px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.technology .list-block .block .list__top-block .text__bold {
+  font-weight: 600;
+}
+/* Projects */
+.projects .bestsellers-block .gallery .current-image .gallery-button {
+  width: 300px;
+  height: 40px;
+  background: #8DB338;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Pros-n-cons */
+.pros-n-cons .pros-n-cons-block {
+  padding: 80px 0 50px 0;
+}
+.pros-n-cons .pros-n-cons-block .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pros-n-cons .pros-n-cons-block .block .pros-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.pros-n-cons .pros-n-cons-block .block .pros-wrapper .pros__title {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 40px 0;
+}
+.pros-n-cons .pros-n-cons-block .block .pros-wrapper .pros-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pros-n-cons .pros-n-cons-block .block .pros-wrapper .pros-block .item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+.pros-n-cons .pros-n-cons-block .block .pros-wrapper .pros-block .item .icon-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin: 0 16px 0 0;
+}
+.pros-n-cons .pros-n-cons-block .block .pros-wrapper .pros-block .item .item__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 220px;
+  min-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: -2px;
+}
+.pros-n-cons .pros-n-cons-block .block .cons-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.pros-n-cons .pros-n-cons-block .block .cons-wrapper .cons__title {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 40px 0;
+}
+.pros-n-cons .pros-n-cons-block .block .cons-wrapper .cons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pros-n-cons .pros-n-cons-block .block .cons-wrapper .cons-block .item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+.pros-n-cons .pros-n-cons-block .block .cons-wrapper .cons-block .item .icon-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin: 0 16px 0 0;
+}
+.pros-n-cons .pros-n-cons-block .block .cons-wrapper .cons-block .item .item__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 220px;
+  min-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: -2px;
+}
