@@ -3805,7 +3805,7 @@ input {
 }
 .architector-projects .architector-block .block .item__wrapper .item .name {
   position: absolute;
-  bottom: -64px;
+  bottom: -44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3841,6 +3841,7 @@ input {
 }
 .architector-projects .architector-block .block .item__wrapper .item .name .text-block {
   margin: 20px 0;
+  margin-bottom: 0px;
 }
 .architector-projects .architector-block .block .item__wrapper .item .name .text-block .text {
   font-weight: 400;

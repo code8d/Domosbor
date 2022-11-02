@@ -436,7 +436,7 @@
                     }
                     .name {
                         position: absolute;
-                        bottom: -64px;
+                        bottom: -44px;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
@@ -458,6 +458,7 @@
                         }
                         .text-block {
                             margin: 20px 0;
+                            margin-bottom: 0px;
                             .text {
                                 font-weight: 400;
                                 font-size: 14px;
