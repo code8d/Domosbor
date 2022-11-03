@@ -3722,7 +3722,7 @@ input {
           box-sizing: border-box;
 }
 
-/* Projects */
+/* Architector Projects */
 .architector-projects .architector-block {
   padding: 80px 0 70px 0;
 }
@@ -3855,6 +3855,214 @@ input {
   color: #8DB338;
 }
 .architector-projects .architector-block .block .item__wrapper .item .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Manufacturer */
+.manufacturer .description-block {
+  padding: 80px 0 70px 0;
+}
+.manufacturer .description-block .block .info-block {
+  margin: 0 0 150px 0;
+}
+.manufacturer .description-block .block .info-block .content-block {
+  margin: 0 -35px 60px -35px;
+}
+.manufacturer .description-block .block .info-block .content-block .subtitle {
+  padding: 0 35px;
+  margin-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.manufacturer .description-block .block .content-block_dfc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.manufacturer .description-block .block .content-block_dfc .inner-content_mw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  margin: 0 -15px;
+}
+.manufacturer .description-block .block .content-block_dfc .inner-content_mw > *:not(:last-child) {
+  margin: 0 !important;
+}
+.manufacturer .description-block .block .content-block_dfc .inner-content_mw .text-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.manufacturer .description-block .block .content-block_dfc .inner-content_mw .text-block .inner-text_mw {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 auto !important;
+          flex: 0 0 auto !important;
+}
+.manufacturer .description-block .block .content-block_dfc .inner-content_mw .text-block .inner-text_w {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 auto !important;
+          flex: 0 0 auto !important;
+  width: 80px;
+}
+.manufacturer .description-block .block .info__text-block {
+  margin: 0;
+}
+.manufacturer .description-block .block .info__text-block .text {
+  max-width: 550px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+}
+.manufacturer .description-block .block .info__text-block .bold {
+  font-weight: 600;
+}
+/* Documents */
+.documents .documents-block {
+  padding: 80px 0 70px 0;
+}
+.documents .documents-block .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+}
+.documents .documents-block .block .item__wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.documents .documents-block .block .item__wrapper .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid #f5f5f6;
+  padding: 40px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.documents .documents-block .block .item__wrapper .item .item__name {
+  max-width: 104px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #575757;
+}
+/* Manufacturer Projects */
+.manufacturer-projects .architector-block .block .item__wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+  margin: 0;
+  overflow-y: hidden;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item:hover .item__cover {
+  opacity: 1;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item .item__cover {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item .item__cover .item_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px;
+  background: #fff;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item .name {
+  position: absolute;
+  bottom: -146px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #49423D;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item .name:hover {
+  bottom: 0px;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item .name .text-block {
+  margin: 20px 0;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item .name .text-block .text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #909090;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item .name .price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #8DB338;
+}
+.manufacturer-projects .architector-block .block .item__wrapper .item .image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
