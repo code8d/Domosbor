@@ -229,16 +229,31 @@
                     margin: 0 -35px;
                     .inner-content {
                         flex: 0 0 50%;
+                        max-width: 50%;
                         padding: 0 35px;
                         box-sizing: border-box;
                         & > *:not(:last-child) {
                             margin: 0 0 20px 0;
                         }
                         .text-block {
+                            flex: 0 0 50%;
                             display: flex;
                             .inner-text {
-                                flex: 0 0 50%;
-                                display: block;
+                                flex: none;
+                                display: flex;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                line-height: 24px;
+                                &:nth-child(2) {
+                                    max-width: 300px;
+                                }
+                            }
+                            .inner-text_ws {
+                                white-space: normal;
+                            }
+                            .inner-text_overflow {
+                                max-width: 50%;
+                                margin: 0 8px 0 0;
                             }
                         }
                     }

@@ -232,6 +232,7 @@
                 .item-block {
                     margin: 0;
                     .image-block {
+                        display: flex;
                         width: 810px;
                         height: 480px;
                         margin: 0;
@@ -501,36 +502,36 @@
                         box-sizing: border-box;
                     }
                     .inner-content {
+                        max-width: 50%;
                         }
                     }
-                }
-                .content-block_dfc {
-                    flex-direction: column;
-                    .inner-content_mw {
-                        display: flex;
-                        flex: 0 0 100%;
-                        margin: 0 -15px;
-                        & > *:not(:last-child) {
-                            margin: 0!important;
-                        }
-                        .text-block {
-                            flex: 0 0 33.333%;
-                            display: flex;
-                            padding: 0 15px;
-                            box-sizing: border-box;
-                            justify-content: space-between;
-                            .inner-text {
-                            }
-                            .inner-text_mw {
-                                flex: 0 0 auto!important;   
-                            }
-                            .inner-text_w {
-                                flex: 0 0 auto!important; 
-                                width: 80px;  
-                            }
-                    }
-                }
             }
+            .content-block_dfc {
+                flex-direction: column;
+                .inner-content_mw {
+                    flex: 0 0 100%;
+                    display: flex;
+                    max-width: 100%!important;
+                    margin: 0 -15px;
+                    & > *:not(:last-child) {
+                        margin: 0!important;
+                    }
+                    .text-block {
+                        flex: 0 0 33.333%;
+                        display: flex;
+                        max-width: 33.333%;
+                        padding: 0 15px;
+                        box-sizing: border-box;
+                        justify-content: flex-start;
+                        .inner-text {
+                            max-width: 305px!important;
+                        }
+                        .inner-text_overflow {
+                            max-width: none;
+                        }
+                    }
+            }
+        }
             .info__text-block {
                 margin: 0;
                 .text {
