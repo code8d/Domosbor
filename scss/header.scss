@@ -16,8 +16,12 @@
             margin: 0 35px 0 0;
         }
         .hamburger {
+            position: relative;
             display: flex;
             flex-direction: column;
+            width: 18px;
+            height: 16px;
+            transition: .3s ease-in-out;
             & > *:not(:last-child) {
                 margin: 0 0 5px 0;
             }
@@ -25,6 +29,23 @@
                 width: 18px;
                 height: 2px;
                 background: #8db338;
+            }
+        }
+        .active {
+            .line:nth-child(1) {
+                position: absolute;
+                top: 7px;
+                transform: rotate(-45deg);
+                margin: 0;
+            }
+            .line:nth-child(2) {
+                display: none;
+            }
+            .line:nth-child(3) {
+                position: absolute;
+                top: 7px;
+                transform: rotate(45deg);
+                margin: 0;
             }
         }
         .search {

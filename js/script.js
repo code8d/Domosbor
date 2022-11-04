@@ -1,3 +1,5 @@
+const wrapper = document.querySelector('.wrapper')
+
 function vh() {
     const hero = document.querySelector('.hero-block')
     const loginWrapper = document.querySelector('.login-wrapper')
@@ -30,7 +32,6 @@ function showRegistration() {
     const btns = document.querySelectorAll('.header_btn')
     const login = document.querySelector('.login-wrapper')
     const signup = document.querySelector('.signup-wrapper')
-    const wrapper = document.querySelector('.wrapper')
 
     btns[2].addEventListener('click', () => {
 
@@ -39,7 +40,7 @@ function showRegistration() {
         if (login.classList.contains('login-show')) {
             wrapper.style.overflow = 'hidden'
             wrapper.style.maxHeight = '100vh'
-        }   else {
+        } else {
             wrapper.style.overflow = 'auto'
             wrapper.style.maxHeight = 'auto'
         }
@@ -80,3 +81,37 @@ function switchingTabs() {
 
 }
 switchingTabs()
+
+function showMenu() {
+    const hamburger = document.querySelector('.hamburger')
+    const menu = document.querySelector('.menu-wrapper')
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active')
+
+        if (hamburger.classList.contains('active')) {
+
+            menu.classList.add('menu_show')
+            wrapper.style.overflow = 'hidden'
+            wrapper.style.maxHeight = '100vh'
+        } else {
+
+            menu.classList.remove('menu_show')
+            wrapper.style.overflow = 'auto'
+            wrapper.style.maxHeight = 'auto'
+        }
+    })
+}
+showMenu()
+
+function showQuestions() {
+    const buttons = document.querySelectorAll('.question_button')
+
+    buttons.forEach(button => {
+        button.addEventListener('click', (e) => {
+
+            button.nextElementSibling.classList.toggle('active')
+        })
+    })
+}
+showQuestions()
