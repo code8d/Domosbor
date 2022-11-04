@@ -112,11 +112,11 @@
                         <div class="login-box block_login active">
                             <div class="email input-block">
                                 <label for="email-input" class="label">Электронная почта / Телефон</label>
-                                <input type="text" class="input" id="email-input" placeholder="Почта">
+                                <input required type="text" class="input" id="email-input" placeholder="Почта">
                             </div>
                             <div class="password input-block">
                                 <label for="password-input" class="label">Пароль</label>
-                                <input type="text" class="input" id="password-input" placeholder="Пароль">
+                                <input required type="text" class="input" id="password-input" placeholder="Пароль">
                             </div>
                             <button class="button__log-in btn">Войти</button>
                             <button class="registration-button btn">Регистрация</button>
@@ -142,11 +142,11 @@
                         <div class="login-box block_login">
                             <div class="email input-block">
                                 <label for="email-input" class="label">Электронная почта / Телефон</label>
-                                <input type="text" class="input" id="email-input" placeholder="Почта">
+                                <input required type="text" class="input" id="email-input" placeholder="Почта">
                             </div>
                             <div class="password input-block">
                                 <label for="password-input" class="label">Пароль</label>
-                                <input type="text" class="input" id="password-input" placeholder="Пароль">
+                                <input required type="text" class="input" id="password-input" placeholder="Пароль">
                             </div>
                             <button class="button__log-in btn">Войти</button>
                             <button class="registration-button btn">Регистрация</button>
@@ -184,14 +184,14 @@
                                 <span class="button-active"></span>
                                 Профессионал</button>
                         </div>
-                        <div class="login-box">
+                        <form class="login-box">
                             <div class="email input-block">
                                 <label for="email-input" class="label">Электронная почта / Телефон</label>
-                                <input type="text" class="input" id="email-input" placeholder="Почта">
+                                <input required type="text" class="input" id="email-input" placeholder="Почта">
                             </div>
                             <div class="password input-block">
                                 <label for="password-input" class="label">Пароль</label>
-                                <input type="text" class="input" id="password-input" placeholder="Пароль">
+                                <input required type="text" class="input" id="password-input" placeholder="Пароль">
                             </div>
                             <button class="button__log-in btn">Войти</button>
                             <button class="registration-button btn">Регистрация</button>
@@ -213,7 +213,7 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <div class="block">
                         <h1 class="title">
@@ -236,9 +236,9 @@
                         <h4 class="title">РЕГИСТРАЦИЯ</h4>
                         <h5 class="subtitle">Введите почту и пароль</h5>
                         <div class="inputs-block">
-                            <input type="text" class="email input" placeholder="Электронная почта">
-                            <input type="text" class="password input" placeholder="Пароль">
-                            <input type="text" class="password input" placeholder="Пароль повторно">
+                            <input required type="text" class="email input" placeholder="Электронная почта">
+                            <input required type="text" class="password input" placeholder="Пароль">
+                            <input required type="text" class="password input" placeholder="Пароль повторно">
                             <button type="submit" class="registration-submit">Регистрация</button>
                         </div>
                     </form>
@@ -253,9 +253,9 @@
                         <h4 class="title">ФОРМА СВЯЗИ</h4>
                         <h5 class="subtitle">Введите почту и пароль</h5>
                         <div class="inputs-block">
-                            <input type="text" class="name input" placeholder="Имя">
-                            <input type="text" class="email input" placeholder="Электронная почта">
-                            <input type="text" class="phone input" placeholder="Телефон">
+                            <input required type="text" class="name input" placeholder="Имя">
+                            <input required type="text" class="email input" placeholder="Электронная почта">
+                            <input required type="text" class="phone input" placeholder="Телефон">
                             <textarea class="message input" cols="30" rows="10" placeholder="Сообщение"></textarea>
                             <button class="attach-button">
                                 <div class="icon-block">
@@ -397,8 +397,8 @@
                                         </div>
                                     </div>
                                     <div class="slider">
-                                        <input type="range" class="range range1" min="0" max="100" value="20">
-                                        <input type="range" class="range range2" min="0" max="100" value="80">
+                                        <input required type="range" class="range range1" min="0" max="100" value="20">
+                                        <input required type="range" class="range range2" min="0" max="100" value="80">
                                     </div>
                                 </div>
                                 <div class="item">
@@ -412,8 +412,8 @@
                                         </div>
                                     </div>
                                     <div class="slider">
-                                        <input type="range" class="range range1" min="0" max="100" value="20">
-                                        <input type="range" class="range range2" min="0" max="100" value="80">
+                                        <input required type="range" class="range range1" min="0" max="100" value="20">
+                                        <input required type="range" class="range range2" min="0" max="100" value="80">
                                     </div>
                                 </div>
                                 <div class="button-block">
@@ -889,10 +889,10 @@
                     <div class="form-wrapper form_nmargin">
                         <div class="form-block">
                             <div class="form-wrapper">
-                                <input type="text" class="form__input" placeholder="Имя">
-                                <input type="text" class="form__input" placeholder="Электронная почта">
-                                <input type="text" class="form__input" placeholder="Телефон">
-                                <textarea name="" id="" cols="30" rows="10" class="form__input textarea" placeholder="Сообщение"></textarea>
+                                <input required type="text" class="form__input" placeholder="Имя">
+                                <input required type="text" class="form__input" placeholder="Электронная почта">
+                                <input required type="text" class="form__input" placeholder="Телефон">
+                                <textarea name="" id="" cols="30" rows="10" class="form__input required textarea" placeholder="Сообщение"></textarea>
                                 <button class="button-add">
                                     <div class="icon-block">
                                         <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1440,10 +1440,10 @@
                                     <p class="form__subtitle">Мы готовы ответить на любой ваш вопрос!</p>
                                 </div>
                                 <div class="form-wrapper">
-                                    <input type="text" class="form__input" placeholder="Имя">
-                                    <input type="text" class="form__input" placeholder="Электронная почта">
-                                    <input type="text" class="form__input" placeholder="Телефон">
-                                    <textarea name="" id="" cols="30" rows="10" class="form__input textarea" placeholder="Сообщение"></textarea>
+                                    <input required type="text" class="form__input" placeholder="Имя">
+                                    <input required type="text" class="form__input" placeholder="Электронная почта">
+                                    <input required type="text" class="form__input" placeholder="Телефон">
+                                    <textarea name="" id="" cols="30" rows="10" class="form__input required textarea" placeholder="Сообщение"></textarea>
                                     <button class="button-add">
                                         <div class="icon-block">
                                             <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

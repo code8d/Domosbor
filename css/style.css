@@ -4513,6 +4513,10 @@ input {
   font-size: 14px;
 }
 
+.show_db {
+  display: block;
+}
+
 /* Feedback */
 .feedback {
   display: none;

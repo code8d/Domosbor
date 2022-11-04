@@ -1,4 +1,17 @@
 const wrapper = document.querySelector('.wrapper')
+const login = document.querySelector('.login-wrapper')
+
+/* Registration */
+const registartionBtn = document.querySelector('.registration-button'),
+registrationBlock = document.querySelector('.registration')
+
+/* Tabs */
+const blocksLogin = document.querySelectorAll('.block_login')
+const tabs = document.querySelectorAll('.user_button')
+
+/* Hamburger */
+const hamburger = document.querySelector('.hamburger')
+const menu = document.querySelector('.menu-wrapper')
 
 function vh() {
     const hero = document.querySelector('.hero-block')
@@ -28,14 +41,15 @@ function vh() {
 }
 vh()
 
-function showRegistration() {
+function showLogIn() {
     const btns = document.querySelectorAll('.header_btn')
-    const login = document.querySelector('.login-wrapper')
     const signup = document.querySelector('.signup-wrapper')
 
     btns[2].addEventListener('click', () => {
 
         login.classList.toggle('login-show')
+        registrationBlock.classList.remove('show_db')
+        menu.classList.remove('menu_show')
 
         if (login.classList.contains('login-show')) {
             wrapper.style.overflow = 'hidden'
@@ -46,12 +60,9 @@ function showRegistration() {
         }
     })
 }
-showRegistration()
+showLogIn()
 
 function switchingTabs() {
-    const blocksLogin = document.querySelectorAll('.block_login')
-    const tabs = document.querySelectorAll('.user_button')
-
     tabs[0].addEventListener('click', () => {
 
         if (tabs[0].classList.contains('acitve')) {
@@ -83,11 +94,11 @@ function switchingTabs() {
 switchingTabs()
 
 function showMenu() {
-    const hamburger = document.querySelector('.hamburger')
-    const menu = document.querySelector('.menu-wrapper')
-
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active')
+
+        registrationBlock.classList.remove('show_db')
+        login.classList.remove('login-show')
 
         if (hamburger.classList.contains('active')) {
 
@@ -115,3 +126,20 @@ function showQuestions() {
     })
 }
 showQuestions()
+
+function showRegistration() {
+
+    registartionBtn.addEventListener('click', () => {
+        login.classList.remove('login-show')
+        registrationBlock.classList.add('show_db')
+
+        if (registartionBtn.classList.contains('show_db')) {
+            wrapper.style.overflow = 'hidden'
+            wrapper.style.maxHeight = '100vh'
+        } else {
+            wrapper.style.overflow = 'auto'
+            wrapper.style.maxHeight = 'auto'
+        }
+    })
+}
+showRegistration()
