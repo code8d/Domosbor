@@ -33,27 +33,6 @@ function vh() {
 }
 vh()
 
-// function showLogIn() {
-//     const btns = document.querySelectorAll('.header_btn')
-//     const signup = document.querySelector('.signup-wrapper')
-
-//     btns[2].addEventListener('click', () => {
-
-//         login.classList.toggle('login-show')
-//         registrationBlock.classList.remove('show_db')
-//         menu.classList.remove('menu_show')
-
-//         if (login.classList.contains('login-show')) {
-//             wrapper.style.overflow = 'hidden'
-//             wrapper.style.maxHeight = '100vh'
-//         } else {
-//             wrapper.style.overflow = 'auto'
-//             wrapper.style.maxHeight = 'auto'
-//         }
-//     })
-// }
-// showLogIn()
-
 function switchingTabs() {
     tabs[0].addEventListener('click', () => {
 
@@ -85,28 +64,6 @@ function switchingTabs() {
 }
 switchingTabs()
 
-// function showMenu() {
-//     hamburger.addEventListener('click', () => {
-//         hamburger.classList.toggle('active')
-
-//         registrationBlock.classList.remove('show_db')
-//         login.classList.remove('login-show')
-
-//         if (hamburger.classList.contains('active')) {
-
-//             menu.classList.add('menu_show')
-//             wrapper.style.overflow = 'hidden'
-//             wrapper.style.maxHeight = '100vh'
-//         } else {
-
-//             menu.classList.remove('menu_show')
-//             wrapper.style.overflow = 'auto'
-//             wrapper.style.maxHeight = 'auto'
-//         }
-//     })
-// }
-// showMenu()
-
 function showQuestions() {
     const buttons = document.querySelectorAll('.question_button')
 
@@ -118,23 +75,6 @@ function showQuestions() {
     })
 }
 showQuestions()
-
-// function showRegistration() {
-
-//     registartionBtn.addEventListener('click', () => {
-//         login.classList.remove('login-show')
-//         registrationBlock.classList.add('show_db')
-
-//         if (registartionBtn.classList.contains('show_db')) {
-//             wrapper.style.overflow = 'hidden'
-//             wrapper.style.maxHeight = '100vh'
-//         } else {
-//             wrapper.style.overflow = 'auto'
-//             wrapper.style.maxHeight = 'auto'
-//         }
-//     })
-// }
-// showRegistration()
 
 /* Registration */
 const registartionBtn = document.querySelector('.registration-button'),
@@ -148,29 +88,53 @@ const hamburger = document.querySelector('.hamburger'),
 const loginBlock = document.querySelector('.login-wrapper'),
     displayLogin = document.querySelectorAll('.header_btn')[2]
 
-const show = () => {
+const displayMenu = () => {
 
     return function showMenuBlock(hideBtn, displayBtn, displayBlock, hideOverflow = wrapper) {
 
-        function listener() {
-
+        displayBtn.addEventListener('click', () => {
             displayBlock.classList.toggle('show_menu')
 
             if (displayBlock.classList.contains('show_menu')) {
                 hideOverflow.classList.add('hide')
                 hamburger.classList.add('active')
-
             }   else {
                 hideOverflow.classList.remove('hide')
                 hamburger.classList.remove('active')
-
             }
-        }
-
-        displayBtn.addEventListener('click', listener)
+        })
     }
 }
-const showMenu = show()
+const showMenu = displayMenu()
 showMenu(hamburger, hamburger, menu)
 showMenu(hamburger, displayLogin, loginBlock)
 // send-form
+
+const form = document.querySelector('.feedback')
+const sendFormBtns = document.querySelectorAll('.send-form')
+
+const displayForm = () => {
+
+    return function showFormBlock(hideBtn, displayBtn, displayBlock, hideOverflow = wrapper) {
+
+        displayBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                displayBlock.classList.toggle('show_menu')
+                console.log('work')
+
+                if (displayBlock.classList.contains('show_menu')) {
+                    hideOverflow.classList.add('hide')
+                    hamburger.classList.add('active')    
+                }   else {
+                    hideOverflow.classList.remove('hide')
+                    hamburger.classList.remove('active')
+                }
+            })
+        })
+        hideBtn.addEventListener('click', () => {
+            displayBlock.classList.remove('show_menu')
+        })
+    }
+}
+const showForm = displayForm()
+showForm(hamburger, sendFormBtns, form)
