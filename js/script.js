@@ -1,17 +1,9 @@
 const wrapper = document.querySelector('.wrapper')
 const login = document.querySelector('.login-wrapper')
 
-/* Registration */
-const registartionBtn = document.querySelector('.registration-button'),
-registrationBlock = document.querySelector('.registration')
-
 /* Tabs */
 const blocksLogin = document.querySelectorAll('.block_login')
 const tabs = document.querySelectorAll('.user_button')
-
-/* Hamburger */
-const hamburger = document.querySelector('.hamburger')
-const menu = document.querySelector('.menu-wrapper')
 
 function vh() {
     const hero = document.querySelector('.hero-block')
@@ -41,26 +33,26 @@ function vh() {
 }
 vh()
 
-function showLogIn() {
-    const btns = document.querySelectorAll('.header_btn')
-    const signup = document.querySelector('.signup-wrapper')
+// function showLogIn() {
+//     const btns = document.querySelectorAll('.header_btn')
+//     const signup = document.querySelector('.signup-wrapper')
 
-    btns[2].addEventListener('click', () => {
+//     btns[2].addEventListener('click', () => {
 
-        login.classList.toggle('login-show')
-        registrationBlock.classList.remove('show_db')
-        menu.classList.remove('menu_show')
+//         login.classList.toggle('login-show')
+//         registrationBlock.classList.remove('show_db')
+//         menu.classList.remove('menu_show')
 
-        if (login.classList.contains('login-show')) {
-            wrapper.style.overflow = 'hidden'
-            wrapper.style.maxHeight = '100vh'
-        } else {
-            wrapper.style.overflow = 'auto'
-            wrapper.style.maxHeight = 'auto'
-        }
-    })
-}
-showLogIn()
+//         if (login.classList.contains('login-show')) {
+//             wrapper.style.overflow = 'hidden'
+//             wrapper.style.maxHeight = '100vh'
+//         } else {
+//             wrapper.style.overflow = 'auto'
+//             wrapper.style.maxHeight = 'auto'
+//         }
+//     })
+// }
+// showLogIn()
 
 function switchingTabs() {
     tabs[0].addEventListener('click', () => {
@@ -93,27 +85,27 @@ function switchingTabs() {
 }
 switchingTabs()
 
-function showMenu() {
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active')
+// function showMenu() {
+//     hamburger.addEventListener('click', () => {
+//         hamburger.classList.toggle('active')
 
-        registrationBlock.classList.remove('show_db')
-        login.classList.remove('login-show')
+//         registrationBlock.classList.remove('show_db')
+//         login.classList.remove('login-show')
 
-        if (hamburger.classList.contains('active')) {
+//         if (hamburger.classList.contains('active')) {
 
-            menu.classList.add('menu_show')
-            wrapper.style.overflow = 'hidden'
-            wrapper.style.maxHeight = '100vh'
-        } else {
+//             menu.classList.add('menu_show')
+//             wrapper.style.overflow = 'hidden'
+//             wrapper.style.maxHeight = '100vh'
+//         } else {
 
-            menu.classList.remove('menu_show')
-            wrapper.style.overflow = 'auto'
-            wrapper.style.maxHeight = 'auto'
-        }
-    })
-}
-showMenu()
+//             menu.classList.remove('menu_show')
+//             wrapper.style.overflow = 'auto'
+//             wrapper.style.maxHeight = 'auto'
+//         }
+//     })
+// }
+// showMenu()
 
 function showQuestions() {
     const buttons = document.querySelectorAll('.question_button')
@@ -127,19 +119,58 @@ function showQuestions() {
 }
 showQuestions()
 
-function showRegistration() {
+// function showRegistration() {
 
-    registartionBtn.addEventListener('click', () => {
-        login.classList.remove('login-show')
-        registrationBlock.classList.add('show_db')
+//     registartionBtn.addEventListener('click', () => {
+//         login.classList.remove('login-show')
+//         registrationBlock.classList.add('show_db')
 
-        if (registartionBtn.classList.contains('show_db')) {
-            wrapper.style.overflow = 'hidden'
-            wrapper.style.maxHeight = '100vh'
-        } else {
-            wrapper.style.overflow = 'auto'
-            wrapper.style.maxHeight = 'auto'
+//         if (registartionBtn.classList.contains('show_db')) {
+//             wrapper.style.overflow = 'hidden'
+//             wrapper.style.maxHeight = '100vh'
+//         } else {
+//             wrapper.style.overflow = 'auto'
+//             wrapper.style.maxHeight = 'auto'
+//         }
+//     })
+// }
+// showRegistration()
+
+/* Registration */
+const registartionBtn = document.querySelector('.registration-button'),
+    registrationBlock = document.querySelector('.registration')
+
+/* Hamburger */
+const hamburger = document.querySelector('.hamburger'),
+    menu = document.querySelector('.menu-wrapper')
+
+/* Authorization */
+const loginBlock = document.querySelector('.login-wrapper'),
+    displayLogin = document.querySelectorAll('.header_btn')[2]
+
+const show = () => {
+
+    return function showMenuBlock(hideBtn, displayBtn, displayBlock, hideOverflow = wrapper) {
+
+        function listener() {
+
+            displayBlock.classList.toggle('show_menu')
+
+            if (displayBlock.classList.contains('show_menu')) {
+                hideOverflow.classList.add('hide')
+                hamburger.classList.add('active')
+
+            }   else {
+                hideOverflow.classList.remove('hide')
+                hamburger.classList.remove('active')
+
+            }
         }
-    })
+
+        displayBtn.addEventListener('click', listener)
+    }
 }
-showRegistration()
+const showMenu = show()
+showMenu(hamburger, hamburger, menu)
+showMenu(hamburger, displayLogin, loginBlock)
+// send-form
