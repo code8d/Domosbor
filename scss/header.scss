@@ -26,25 +26,25 @@
                 margin: 0 0 5px 0;
             }
             .line {
+                position: relative;
                 width: 18px;
                 height: 2px;
                 background: #8db338;
+                opacity: 1;
+                transition: .5s ease-in-out;
             }
         }
         .active {
             .line:nth-child(1) {
-                position: absolute;
-                top: 7px;
-                transform: rotate(-45deg);
+                transform: translateY(6px) rotate(45deg);
                 margin: 0;
             }
             .line:nth-child(2) {
-                display: none;
+                position: absolute;
+                opacity: 0;
             }
             .line:nth-child(3) {
-                position: absolute;
-                top: 7px;
-                transform: rotate(45deg);
+                transform: translateY(4px) rotate(-45deg);
                 margin: 0;
             }
         }

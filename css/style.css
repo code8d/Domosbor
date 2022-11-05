@@ -44,6 +44,13 @@ input {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+  overflow: auto;
+  max-height: auto;
+}
+
+.hide {
+  overflow: hidden;
+  max-height: 100vh;
 }
 
 .container {
@@ -102,25 +109,26 @@ input {
   margin: 0 0 5px 0;
 }
 .nav-block .block1 .hamburger .line {
+  position: relative;
   width: 18px;
   height: 2px;
   background: #8db338;
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .nav-block .block1 .active .line:nth-child(1) {
-  position: absolute;
-  top: 7px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
   margin: 0;
 }
 .nav-block .block1 .active .line:nth-child(2) {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 .nav-block .block1 .active .line:nth-child(3) {
-  position: absolute;
-  top: 7px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: translateY(4px) rotate(-45deg);
+          transform: translateY(4px) rotate(-45deg);
   margin: 0;
 }
 .nav-block .block1 .search {
@@ -4402,10 +4410,6 @@ input {
   color: #fff;
 }
 
-.login-show {
-  top: 80px;
-}
-
 /* Registration */
 .registration {
   display: none;
@@ -4513,10 +4517,6 @@ input {
   font-size: 14px;
 }
 
-.show_db {
-  display: block;
-}
-
 /* Feedback */
 .feedback {
   display: none;
@@ -4543,4 +4543,8 @@ input {
   display: -ms-flexbox;
   display: flex;
   margin-right: 8px;
+}
+.show_menu {
+  display: block;
+  top: 80px;
 }
