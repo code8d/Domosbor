@@ -203,6 +203,9 @@
 }
 .signup-wrapper {
 }
+.login-show {
+    top: 80px;
+}
 
 /* Registration */
 
@@ -278,6 +281,9 @@
         }
     }
 }
+.show_db {
+    display: block;
+}
 
 /* Feedback */
 
@@ -324,9 +330,4 @@
             }
         }
     }
-}
-
-.show_menu {
-    display: block;
-    top: 80px;
 }
