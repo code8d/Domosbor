@@ -138,3 +138,37 @@ const displayForm = () => {
 }
 const showForm = displayForm()
 showForm(hamburger, sendFormBtns, form)
+
+/* Gallery */
+
+// const buttons = document.querySelectorAll('.gallery-button')
+// const carousel = document.querySelector('.carousel')
+
+// buttons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         if (button.classList.contains('gallery-button_left')) {
+//             slide(button, false)
+//         }   else if (button.classList.contains('gallery-button_right')) {
+//             slide(false, button)
+//         }
+//     })
+// })
+
+// let currentImage = 0
+// const image = carousel.querySelectorAll('.item')
+
+// function slide(left, right) {
+
+//     if (currentImage < carousel.childNodes.length) {
+//         currentImage++
+//     }
+//     if (currentImage === carousel.childNodes.length) {
+//         currentImage = 0
+//     }
+
+//     if (left) {
+//         carousel.style.left = `${currentImage * image[0].clientWidth}px`
+//     }   else if (right) {
+//         carousel.style.left = `-${currentImage * image[0].clientWidth}px`
+//     }
+// }
