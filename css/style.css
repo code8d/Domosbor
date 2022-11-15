@@ -4147,6 +4147,7 @@ html {
   height: 100%;
   background: #fff;
   min-height: 820px;
+  max-height: calc(100vh - 80px);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }

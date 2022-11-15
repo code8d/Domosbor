@@ -13,30 +13,55 @@ function vh() {
     const feedback = document.querySelector('.feedback')
 
     const height = (a, b, c, d, e) => {
-        a.style.height = `${document.documentElement.clientHeight - 80}px`
-        a.style.minHeight = `820px`
-
-        b.style.height = `${document.documentElement.clientHeight - 80}px`
-        b.style.minHeight = `820px`
-
-        c.style.height = `${document.documentElement.clientHeight - 80}px`
-        c.style.minHeight = `820px`
-
-        d.style.height = `${document.documentElement.clientHeight - 80}px`
-        d.style.minHeight = `820px`
-
-        e.style.height = `${document.documentElement.clientHeight - 80}px`
-        e.style.minHeight = `820px`
+        if (a === undefined || a === null) {
+            a = null
+        }   else {
+            a.style.height = `${document.documentElement.clientHeight - 80}px`
+            a.style.minHeight = `820px`
+        }
+        if (b === undefined || a === null) {
+            b = null
+        }   else {
+            b.style.height = `${document.documentElement.clientHeight - 80}px`
+            b.style.minHeight = `820px`
+        }
+        if (c === undefined || a === null) {
+            c = null
+        }   else {
+            c.style.height = `${document.documentElement.clientHeight - 80}px`
+            c.style.minHeight = `820px`
+        }
+        if (d === undefined || a === null) {
+            d = null
+        }   else {
+            d.style.height = `${document.documentElement.clientHeight - 80}px`
+            d.style.minHeight = `820px`
+        }
+        if (e === undefined || a === null) {
+            e = null
+        }   else {
+            e.style.height = `${document.documentElement.clientHeight - 80}px`
+            e.style.minHeight = `820px`
+        }
     }
 
     return height(hero, loginWrapper, signupWrapper, registration, feedback)
 }
 vh()
 
+const headerButtons = document.querySelectorAll('.header-button')
 const showMenu = document.querySelector('.hamburger')
 const showLogin = document.querySelectorAll('.header_btn')[2]
 const menu = document.querySelector('.menu-wrapper')
 const loginMenu = document.querySelector('.login-wrapper')
+
+function prevDefault(e) {
+    e.preventDefault()
+}
+
+headerButtons.forEach(button => {
+    button.addEventListener('click', prevDefault)
+})
 
 showMenu.addEventListener('click', () => {
     showMenuFunc()
