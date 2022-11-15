@@ -404,6 +404,8 @@
             display: flex;
             margin: 0 -15px;
             margin-bottom: 40px;
+            left: 0;
+            transition: left .5s ease;
             .item {
                 flex: 0 0 20%;
                 display: flex;

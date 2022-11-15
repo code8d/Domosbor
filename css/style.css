@@ -732,6 +732,9 @@ html {
   display: flex;
   margin: 0 -15px;
   margin-bottom: 40px;
+  left: 0;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
 }
 .gallery .carousel__wrapper .carousel .item {
   -webkit-box-flex: 0;
