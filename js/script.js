@@ -33,142 +33,46 @@ function vh() {
 }
 vh()
 
-function switchingTabs() {
-    tabs[0].addEventListener('click', () => {
+const showMenu = document.querySelector('.hamburger')
+const showLogin = document.querySelectorAll('.header_btn')[2]
+const menu = document.querySelector('.menu-wrapper')
+const loginMenu = document.querySelector('.login-wrapper')
 
-        if (tabs[0].classList.contains('acitve')) {
-            return
-        }
-        if (!tabs[0].classList.contains('active')) {
-            tabs[0].classList.add('active')
-            tabs[1].classList.remove('active')
+showMenu.addEventListener('click', () => {
+    showMenuFunc()
+    overflow()
+})
 
-            blocksLogin[0].classList.add('active')
-            blocksLogin[1].classList.remove('active')
-        }
-    })
-    tabs[1].addEventListener('click', () => {
+if (loginMenu.classList.contains('menu_active')) {
+    showMenu.classList.add('active')
+}
 
-        if (tabs[1].classList.contains('acitve')) {
-            return
-        }
-        if (!tabs[1].classList.contains('active')) {
-            tabs[1].classList.add('active')
-            tabs[0].classList.remove('active')
+function showMenuFunc() {
 
-            blocksLogin[1].classList.add('active')
-            blocksLogin[0].classList.remove('active')
-        }
-    })
+    if (showMenu.classList.contains('active')) {
+        menu.classList.remove('menu_active')
+        loginMenu.classList.remove('menu_active')
+    }   else {
+        menu.classList.toggle('menu_active')
+    }
+    showMenu.classList.toggle('active')
 
 }
-switchingTabs()
 
-function showQuestions() {
-    const buttons = document.querySelectorAll('.question_button')
+showLogin.addEventListener('click', () => {
+    showLoginFunc()
+    overflow()
+})
 
-    buttons.forEach(button => {
-        button.addEventListener('click', (e) => {
-
-            button.nextElementSibling.classList.toggle('active')
-        })
-    })
+function showLoginFunc() {
+    showMenu.classList.toggle('active')
+    loginMenu.classList.toggle('menu_active')
 }
-showQuestions()
 
-/* Registration */
-const registartionBtn = document.querySelector('.registration-button'),
-    registrationBlock = document.querySelector('.registration')
-
-/* Hamburger */
-const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.menu-wrapper')
-
-/* Authorization */
-const loginBlock = document.querySelector('.login-wrapper'),
-    displayLogin = document.querySelectorAll('.header_btn')[2]
-
-const displayMenu = () => {
-
-    return function showMenuBlock(hideBtn, displayBtn, displayBlock, hideOverflow = wrapper) {
-
-        displayBtn.addEventListener('click', () => {
-            displayBlock.classList.toggle('show_menu')
-
-            if (displayBlock.classList.contains('show_menu')) {
-                hideOverflow.classList.add('hide')
-                hamburger.classList.add('active')
-            }   else {
-                hideOverflow.classList.remove('hide')
-                hamburger.classList.remove('active')
-            }
-        })
+function overflow() {
+    if (showMenu.classList.contains('active')) {
+        wrapper.classList.add('hide')
+    }   else {
+        wrapper.classList.remove('hide')
     }
 }
-const showMenu = displayMenu()
-showMenu(hamburger, hamburger, menu)
-showMenu(hamburger, displayLogin, loginBlock)
-// send-form
-
-const form = document.querySelector('.feedback')
-const sendFormBtns = document.querySelectorAll('.send-form')
-
-const displayForm = () => {
-
-    return function showFormBlock(hideBtn, displayBtn, displayBlock, hideOverflow = wrapper) {
-
-        displayBtn.forEach(btn => {
-            btn.addEventListener('click', () => {
-                displayBlock.classList.toggle('show_menu')
-                console.log('work')
-
-                if (displayBlock.classList.contains('show_menu')) {
-                    hideOverflow.classList.add('hide')
-                    hamburger.classList.add('active')    
-                }   else {
-                    hideOverflow.classList.remove('hide')
-                    hamburger.classList.remove('active')
-                }
-            })
-        })
-        hideBtn.addEventListener('click', () => {
-            displayBlock.classList.remove('show_menu')
-        })
-    }
-}
-const showForm = displayForm()
-showForm(hamburger, sendFormBtns, form)
-
-/* Gallery */
-
-// const buttons = document.querySelectorAll('.gallery-button')
-// const carousel = document.querySelector('.carousel')
-
-// buttons.forEach(button => {
-//     button.addEventListener('click', () => {
-//         if (button.classList.contains('gallery-button_left')) {
-//             slide(button, false)
-//         }   else if (button.classList.contains('gallery-button_right')) {
-//             slide(false, button)
-//         }
-//     })
-// })
-
-// let currentImage = 0
-// const image = carousel.querySelectorAll('.item')
-
-// function slide(left, right) {
-
-//     if (currentImage < carousel.childNodes.length) {
-//         currentImage++
-//     }
-//     if (currentImage === carousel.childNodes.length) {
-//         currentImage = 0
-//     }
-
-//     if (left) {
-//         carousel.style.left = `${currentImage * image[0].clientWidth}px`
-//     }   else if (right) {
-//         carousel.style.left = `-${currentImage * image[0].clientWidth}px`
-//     }
-// }
