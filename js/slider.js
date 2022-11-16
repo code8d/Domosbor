@@ -5,9 +5,33 @@ function slider(active = 0) {
     const marks = document.querySelectorAll('.mark')
     
     let activeSlide = 0
-    
+
     marks[active].classList.add('active')
 
+    marks.forEach(flag => {
+        flag.addEventListener('click', () => {
+            activeFlag(flag)
+        })
+    })
+    const itemWidth = carouselItems[0].clientWidth
+
+    function activeFlag(element) {
+        marks.forEach(flag => flag.classList.remove('active'))
+        element.classList.add('active')
+
+        if ( marks[0].classList.contains('active')) {
+            activeSlide = 0
+        }   else if ( marks[1].classList.contains('active')) {
+            activeSlide = 5
+        }   else if ( marks[2].classList.contains('active')) {
+            activeSlide = 10
+        }   else if ( marks[3].classList.contains('active')) {
+            activeSlide = 15
+        }
+
+        carousel.style.left = `-${itemWidth * activeSlide}px`
+    }
+    
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             innerSlider(button)
@@ -15,7 +39,6 @@ function slider(active = 0) {
     })
     
     function innerSlider(button) {
-        const itemWidth = carouselItems[0].clientWidth
     
         if (button.classList.contains('gallery-button_left')) {
             if (activeSlide === 0) {
@@ -34,23 +57,20 @@ function slider(active = 0) {
     
         if (activeSlide === 0) {
             activeMark(0)
-            marks[0].classList.add('active')
         }
         if (activeSlide === 5) {
             activeMark(1)
-            marks[1].classList.add('active')
         }
         if (activeSlide === 10) {
             activeMark(2)
-            marks[2].classList.add('active')
         }
-        if(activeSlide === 15) {
+        if (activeSlide === 15) {
             activeMark(3)
-            marks[3].classList.add('active')
         }
         if (activeSlide === 20) {
             activeMark(4)
         }
+
         function activeMark(number) {
             marks.forEach(mark => mark.classList.remove('active'))
             marks[number].classList.add('active')
