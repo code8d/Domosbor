@@ -1,5 +1,6 @@
 const wrapper = document.querySelector('.wrapper')
 const login = document.querySelector('.login-wrapper')
+const form = document.querySelector('.feedback')
 
 /* Tabs */
 const blocksLogin = document.querySelectorAll('.block_login')
@@ -44,7 +45,6 @@ function vh() {
             e.style.minHeight = `820px`
         }
     }
-
     return height(hero, loginWrapper, signupWrapper, registration, feedback)
 }
 vh()
@@ -73,7 +73,6 @@ if (loginMenu.classList.contains('menu_active')) {
 }
 
 function showMenuFunc() {
-
     if (showMenu.classList.contains('active')) {
         menu.classList.remove('menu_active')
         loginMenu.classList.remove('menu_active')
@@ -81,7 +80,6 @@ function showMenuFunc() {
         menu.classList.toggle('menu_active')
     }
     showMenu.classList.toggle('active')
-
 }
 
 showLogin.addEventListener('click', () => {
