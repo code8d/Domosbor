@@ -14,7 +14,6 @@ function toggle(element) {
     const content = element.nextElementSibling
 
     for (let item of itemsChlidrens) {
-        console.log(item)
         if (item === element.parentNode) {
             element.parentNode.classList.toggle('active')
             content.classList.toggle('active')
